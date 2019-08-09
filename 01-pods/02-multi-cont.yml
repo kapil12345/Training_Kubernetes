@@ -6,4 +6,5 @@ metadata:
 spec:
   containers:
   - name: web
-    image: <Image>
+    image: rkalluru/httpd:v1 
+    
