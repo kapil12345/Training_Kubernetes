@@ -5,5 +5,5 @@ metadata:
 spec:
   containers:
   - name: myapp
-    image: <Image>
+    image: 
 
