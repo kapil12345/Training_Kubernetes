@@ -7,4 +7,6 @@ spec:
   containers:
   - name: web
     image: rkalluru/httpd:v1 
-    
+  - name: centos 
+    image: centos 
+    command: ["sleep", "10000"]
