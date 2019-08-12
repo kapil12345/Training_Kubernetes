@@ -11,6 +11,7 @@ spec:
         memory: "128Mi"
         cpu: "250m"
       requests:
-        memory: ""
+        memory: "64Mi"
+        cpu: ""
     ports:
       - containerPort: <Port>
