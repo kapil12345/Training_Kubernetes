@@ -4,8 +4,8 @@ metadata:
   name: 03-resource
 spec:
   containers:
-  - name: myapp
-    image: <Image>
+  - name: httpd
+    image: httpd
     resources:
       limits:
         memory: "128Mi"
