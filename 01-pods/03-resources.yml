@@ -1,9 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: 03-
-  labels:
-    name: myapp
+  name: 03-resource
 spec:
   containers:
   - name: myapp
