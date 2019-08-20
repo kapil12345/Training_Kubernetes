@@ -19,9 +19,9 @@ spec:
 apiVersion: v1
 kind: Pod
 metadata:
-  name: httpd-x1
+  name: httpd-x2
   labels:
-    proj: x1
+    proj: x2
 spec:
   containers:
   - name: httpd
