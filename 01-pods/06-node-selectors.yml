@@ -5,7 +5,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: httpd-x1
+  name: httpd-ns
 spec:
   containers:
   - name: httpd
