@@ -1,6 +1,6 @@
 ## For using node selector you need to setup some labels to the nodes.
 ## kubectl label nodes <node-name> <label-key>=<label-value>
-
+## kubectl label nodes gke-standard-cluster-1-default-pool-1d9a836a-9nwg STORAGE=true --overwrite
 ---
 apiVersion: v1
 kind: Pod
