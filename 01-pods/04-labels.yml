@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: httpd-x1
   labels:
-    name: myapp
+    proj: x1
 spec:
   containers:
   - name: myapp
