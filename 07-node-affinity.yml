@@ -11,7 +11,7 @@ spec:
           - key: STORAGE
             operator: In
             values:
-            - e2e-az1
+            - true
             - e2e-az2
   containers:
   - name: with-node-affinity
