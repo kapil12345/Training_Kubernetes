@@ -6,11 +6,11 @@ metadata:
     proj: x1
 spec:
   containers:
-  - name: myapp
-    image: <Image>
+  - name: httpd
+    image: httpd
     resources:
       limits:
-        memory: "128Mi"
+        memory: "64Mi"
         cpu: "500m"
     ports:
       - containerPort: <Port>
