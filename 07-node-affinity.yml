@@ -3,16 +3,6 @@ kind: Pod
 metadata:
   name: with-node-affinity
 spec:
-  affinity:
-    nodeAffinity:
-      requiredDuringSchedulingIgnoredDuringExecution:
-        nodeSelectorTerms:
-        - matchExpressions:
-          - key: STORAGE
-            operator: In
-            values:
-            - "true"
-            - "yes"
   containers:
   - name: with-node-affinity
     image: k8s.gcr.io/pause:2.0
