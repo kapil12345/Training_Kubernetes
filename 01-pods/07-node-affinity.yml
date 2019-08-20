@@ -22,11 +22,11 @@ spec:
 apiVersion: v1
 kind: Pod
 metadata:
-  name: with-node-affinity
+  name: with-node-affinity-required
 spec:
   affinity:
     nodeAffinity:
-      requiredDuringSchedulingIgnoredDuringExecution:
+      requiredDuringSchedulingRequiredDuringExecution:
         nodeSelectorTerms:
         - matchExpressions:
           - key: STORAGE
@@ -35,5 +35,5 @@ spec:
             - "true"
             - "yes"
   containers:
-  - name: with-node-affinity
+  - name: with-node-affinity-req
     image: k8s.gcr.io/pause:2.0
