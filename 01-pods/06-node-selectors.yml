@@ -1,2 +1,4 @@
 ## For using node selector you need to setup some labels to the nodes.
-## 
+## kubectl label nodes <node-name> <label-key>=<label-value>
+
+---
