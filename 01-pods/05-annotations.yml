@@ -4,7 +4,7 @@ kind: Pod
 metadata:
   name: httpd-x1
   labels:
-    proj: x1
+    proj: x*
 spec:
   containers:
   - name: httpd
