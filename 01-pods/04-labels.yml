@@ -1,3 +1,4 @@
+---
 apiVersion: v1
 kind: Pod
 metadata:
@@ -11,6 +12,23 @@ spec:
     resources:
       limits:
         memory: "64Mi"
-        cpu: "500m"
+        cpu: "50m"
     ports:
-      - containerPort: <Port>
+      - containerPort: 80
+--- 
+apiVersion: v1
+kind: Pod
+metadata:
+  name: httpd-x1
+  labels:
+    proj: x1
+spec:
+  containers:
+  - name: httpd
+    image: httpd
+    resources:
+      limits:
+        memory: "64Mi"
+        cpu: "50m"
+    ports:
+      - containerPort: 80
