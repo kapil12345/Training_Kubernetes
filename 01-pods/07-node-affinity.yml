@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: with-node-affinity
 spec:
-    affinity:
+  affinity:
     nodeAffinity:
       requiredDuringSchedulingIgnoredDuringExecution:
         nodeSelectorTerms:
