@@ -28,9 +28,9 @@ metadata:
     name: httpd
 spec:
   tolerations:
-  - key: ""
+  - key: "security"
     operator: "Equal"
-    value: "value1"
+    value: "none"
     effect: "NoExecute"
   containers:
   - name: httpd
