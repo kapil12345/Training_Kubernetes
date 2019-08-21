@@ -31,7 +31,7 @@ spec:
   - key: "security"
     operator: "Equal"
     value: "none"
-    effect: "NoExecute"
+    effect: "NoSchedule"
   containers:
   - name: httpd
     image: httpd
