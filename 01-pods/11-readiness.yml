@@ -8,13 +8,11 @@ spec:
   containers:
   - name: httpd
     image: httpd
-    livenessProbe:
-      httpGet:
-        path: /healthz
+    readinessProbe:
+      tcpSocket:
         port: 8080
-        httpHeaders:
-        - name: Custom-Header
-          value: Awesome
+      initialDelaySeconds: 5
+      periodSeconds: 10
     resources:
       limits:
         memory: "128Mi"
