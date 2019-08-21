@@ -27,7 +27,7 @@ spec:
       requiredDuringSchedulingIgnoredDuringExecution:
       - labelSelector:
           matchExpressions:
-          - key: security
+          - key: app
             operator: In
             values:
             - S1
