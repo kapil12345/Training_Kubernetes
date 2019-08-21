@@ -1,6 +1,7 @@
 ## Taints should be applied on Nodes
 ## Tolerations should be given to Pods
 
+---
 apiVersion: v1
 kind: Pod
 metadata:
@@ -17,3 +18,5 @@ spec:
         cpu: "100m"
     ports:
       - containerPort: 80
+
+--- 
