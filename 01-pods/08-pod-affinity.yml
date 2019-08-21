@@ -54,7 +54,6 @@ spec:
               values:
               - S2
           topologyKey: "kubernetes.io/hostname"
-        
   containers:
   - name: with-pod-affinity
     image: k8s.gcr.io/pause:2.0
