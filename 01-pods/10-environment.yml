@@ -11,7 +11,8 @@ spec:
     env:
       - name: PROJECT_NAME
         value: XYZ
-      - name: 
+      - name: APPLICATION_NAME
+        value: HTTPD 
     resources:
       limits:
         memory: "128Mi"
