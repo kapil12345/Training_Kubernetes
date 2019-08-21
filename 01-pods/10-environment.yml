@@ -9,7 +9,9 @@ spec:
   - name: myapp
     image: httpd
     env:
-      - name: PROJECT_
+      - name: PROJECT_NAME
+        value: XYZ
+      - name: 
     resources:
       limits:
         memory: "128Mi"
