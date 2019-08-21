@@ -9,11 +9,11 @@ metadata:
     name: httpd
 spec:
   containers:
-  - name: myapp
-    image: <Image>
+  - name: httpd
+    image: httpd
     resources:
       limits:
         memory: "128Mi"
-        cpu: "500m"
+        cpu: "100m"
     ports:
-      - containerPort: <Port>
+      - containerPort: 80
