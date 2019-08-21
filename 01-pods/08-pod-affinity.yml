@@ -37,3 +37,21 @@ spec:
     image: k8s.gcr.io/pause:2.0
 
 --- 
+apiVersion: v1
+kind: Pod
+metadata:
+  name: with-pod-affinity
+spec:
+  affinity:
+    podAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+      - labelSelector:
+          matchExpressions:
+          - key: app
+            operator: In
+            values:
+            - httpd
+        topologyKey: "kubernetes.io/hostname"
+  containers:
+  - name: with-pod-affinity
+    image: k8s.gcr.io/pause:2.0
