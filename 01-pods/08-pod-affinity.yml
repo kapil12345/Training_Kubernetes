@@ -49,10 +49,10 @@ spec:
         podAffinityTerm:
           labelSelector:
             matchExpressions:
-            - key: security
+            - key: app
               operator: In
               values:
-              - S2
+              - httpd
           topologyKey: "kubernetes.io/hostname"
   containers:
   - name: with-pod-affinity
