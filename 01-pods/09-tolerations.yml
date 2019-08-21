@@ -28,10 +28,10 @@ metadata:
     name: httpd
 spec:
   tolerations:
-- key: "key1"
-  operator: "Equal"
-  value: "value1"
-  effect: "NoExecute"
+  - key: ""
+    operator: "Equal"
+    value: "value1"
+    effect: "NoExecute"
   containers:
   - name: httpd
     image: httpd
