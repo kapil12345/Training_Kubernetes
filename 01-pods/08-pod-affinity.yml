@@ -40,7 +40,7 @@ spec:
 apiVersion: v1
 kind: Pod
 metadata:
-  name: with-pod-affinity
+  name: with-pod-anti-affinity
 spec:
   affinity:
     podAntiAffinity:
@@ -55,5 +55,5 @@ spec:
               - httpd
           topologyKey: "kubernetes.io/hostname"
   containers:
-  - name: with-pod-affinity
+  - name: with-pod-anti-affinity
     image: k8s.gcr.io/pause:2.0
