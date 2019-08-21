@@ -1,1 +1,3 @@
-## Taints should be applied on 
+## Taints should be applied on Nodes
+## Tolerations should be given to Pods
+
