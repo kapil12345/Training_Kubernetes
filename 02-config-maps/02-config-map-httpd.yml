@@ -10,5 +10,6 @@ spec:
         - name: COURSE_NAME
           valueFrom:
             configMapKeyRef:
-              name: config
-              key: PROJECT_ENV
+              name: httpd-data
+              key: COURSE_NAME 
+  
