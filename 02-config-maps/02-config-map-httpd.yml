@@ -16,9 +16,9 @@ spec:
     - name: httpd 
       image: rkalluru/httpd-cm:v1
       resources:
-      limits:
-        memory: "64Mi"
-        cpu: "50m"
+        limits:
+          memory: "64Mi"
+          cpu: "50m"
       env:
         - name: COURSE_NAME
           valueFrom:
