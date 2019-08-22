@@ -5,4 +5,5 @@ metadata:
 data:
   PROJECT_NAME: DEMO 
   PROJECT_ENV: DEV 
-  
+  MYSQL_USERNAME: root 
+  MYSQL_HOST: localhost 
