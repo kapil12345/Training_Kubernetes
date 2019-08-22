@@ -10,3 +10,5 @@ data:
   MYSQL_HOST: localhost 
 
 --- 
+apiVersion: v1
+kind: Pod 
