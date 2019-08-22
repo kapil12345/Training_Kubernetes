@@ -25,4 +25,18 @@ spec:
             configMapKeyRef:
               name: config-1
               key: PROJECT_NAME
-        - name: 
+        - name: PROJECT_ENV
+          valueFrom:
+            configMapKeyRef:
+              name: config-1
+              key: PROJECT_NAME
+        - name: PROJECT_NAME
+          valueFrom:
+            configMapKeyRef:
+              name: config-1
+              key: PROJECT_NAME
+        - name: PROJECT_NAME
+          valueFrom:
+            configMapKeyRef:
+              name: config-1
+              key: PROJECT_NAME
