@@ -29,7 +29,7 @@ spec:
           valueFrom:
             configMapKeyRef:
               name: config-1
-              key: PROJECT_NAME
+              key: PROJECT_ENV
         - name: MYSQL_USERNAME
           valueFrom:
             configMapKeyRef:
