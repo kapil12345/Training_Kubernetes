@@ -13,10 +13,12 @@ data:
 apiVersion: v1
 kind: Pod 
 metadata:
-  name: centos-configmap-1
+  name: centos-configmap-2
 spec:
   containers:
     - name: centos 
       image: centos 
       command: ["sleep", "10000"]
-      env
+      envFrom:
+      - configMapRef:
+          name: config-1
