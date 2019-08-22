@@ -21,4 +21,9 @@ spec:
       command: ["sleep", "10000"]
       env:
         - name: PROJECT_NAME
-          val
+          valueFrom:
+            configMapKeyRef:
+              # The ConfigMap containing the value you want to assign to SPECIAL_LEVEL_KEY
+              name: special-config
+              # Specify the key associated with the value
+              key: special.how
