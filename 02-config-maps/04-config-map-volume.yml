@@ -16,7 +16,7 @@ metadata:
 spec:
   containers:
     - name: test-container
-      image: 
+      image: centos
       command: [ "sleep", "10000" ]
       volumeMounts:
       - name: config-volume
