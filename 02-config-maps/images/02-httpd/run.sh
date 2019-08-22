@@ -1,3 +1,3 @@
 #!/bin/bash 
 
-echo 
+echo -e "Welcome to ${COURSE_NAME} Training"
