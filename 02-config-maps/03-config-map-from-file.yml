@@ -1,0 +1,42 @@
+---
+apiVersion: v1
+kind: ConfigMap 
+metadata:
+  name: config-1
+data:
+  PROJECT_NAME: DEMO 
+  PROJECT_ENV: DEV 
+  MYSQL_USERNAME: root 
+  MYSQL_HOST: localhost 
+
+--- 
+apiVersion: v1
+kind: Pod 
+metadata:
+  name: centos-configmap-1
+spec:
+  containers:
+    - name: centos 
+      image: centos 
+      command: ["sleep", "10000"]
+      env:
+        - name: PROJECT_NAME
+          valueFrom:
+            configMapKeyRef:
+              name: config-1
+              key: PROJECT_NAME
+        - name: PROJECT_ENV
+          valueFrom:
+            configMapKeyRef:
+              name: config-1
+              key: PROJECT_ENV
+        - name: MYSQL_USERNAME
+          valueFrom:
+            configMapKeyRef:
+              name: config-1
+              key: MYSQL_USERNAME
+        - name: MYSQL_HOST
+          valueFrom:
+            configMapKeyRef:
+              name: config-1
+              key: MYSQL_HOST
