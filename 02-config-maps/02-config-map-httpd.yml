@@ -1,7 +1,10 @@
 ---
 apiVersion: v1
 kind: Pod 
-
+metadata: 
+  name: httpd-data 
+data:
+  
 ---
 apiVersion: v1
 kind: Pod
