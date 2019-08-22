@@ -4,7 +4,7 @@ kind: Pod
 metadata: 
   name: httpd-data 
 data:
-  
+  course_name: 
 ---
 apiVersion: v1
 kind: Pod
