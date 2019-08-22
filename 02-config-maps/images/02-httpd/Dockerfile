@@ -1,3 +1,4 @@
 FROM    centos 
 RUN     yum install httpd -y 
-COPY dest
+COPY    run.sh / 
+RUN     chmod +x /run.sh 
