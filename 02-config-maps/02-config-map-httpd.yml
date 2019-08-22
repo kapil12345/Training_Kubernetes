@@ -6,10 +6,10 @@ spec:
   containers:
     - name: httpd 
       image: rkalluru/httpd-cm:v1
+      
       env:
         - name: COURSE_NAME
           valueFrom:
             configMapKeyRef:
               name: httpd-data
               key: COURSE_NAME 
-  
