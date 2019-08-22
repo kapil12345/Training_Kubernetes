@@ -4,7 +4,7 @@ kind: ConfigMap
 metadata: 
   name: httpd-data 
 data:
-  course_name: DevOps
+  course_name: Kubernetes
   course_time: 8pm
 ---
 apiVersion: v1
