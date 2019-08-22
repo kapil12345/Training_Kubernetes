@@ -17,4 +17,6 @@ metadata:
 spec:
   containers:
     - name: centos 
-      va
+      image: centos 
+      command: ["sleep", "10000"]
+      env:
