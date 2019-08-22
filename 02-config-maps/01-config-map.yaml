@@ -20,4 +20,5 @@ spec:
       image: centos 
       command: ["sleep", "10000"]
       env:
-      
+        - name: PROJECT_NAME
+          value: DEMO 
