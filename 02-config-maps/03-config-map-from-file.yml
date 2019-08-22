@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: ConfigMap 
 metadata:
-  name: config-1
+  name: config-2
 data:
   PROJECT_NAME: DEMO 
   PROJECT_ENV: DEV 
