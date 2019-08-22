@@ -4,4 +4,5 @@ metadata:
   name: config-1
 data:
   PROJECT_NAME: DEMO 
+  PROJECT_ENV: DEV 
   
