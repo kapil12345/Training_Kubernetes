@@ -5,4 +5,7 @@ metadata:
 spec:
   containers:
     - name: httpd 
-      image: rkalluru/
+      image: rkalluru/httpd-cm:v1
+      env:
+        - name: COURSE_NAME
+          
