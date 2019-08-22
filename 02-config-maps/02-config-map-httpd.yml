@@ -24,4 +24,5 @@ spec:
           valueFrom:
             configMapKeyRef:
               name: httpd-data
-              key: COURSE_NAME 
+              key: course_name 
+               
