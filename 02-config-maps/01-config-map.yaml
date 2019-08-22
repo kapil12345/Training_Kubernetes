@@ -13,4 +13,8 @@ data:
 apiVersion: v1
 kind: Pod 
 metadata:
-  name: 
+  name: centos-configmap-1
+spec:
+  containers:
+    - name: centos 
+      va
