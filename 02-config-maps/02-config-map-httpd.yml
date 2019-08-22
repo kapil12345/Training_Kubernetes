@@ -10,5 +10,5 @@ spec:
         - name: COURSE_NAME
           valueFrom:
             configMapKeyRef:
-              name: config-1
+              name: config
               key: PROJECT_ENV
