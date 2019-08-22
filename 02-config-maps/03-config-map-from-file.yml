@@ -19,24 +19,4 @@ spec:
     - name: centos 
       image: centos 
       command: ["sleep", "10000"]
-      env:
-        - name: PROJECT_NAME
-          valueFrom:
-            configMapKeyRef:
-              name: config-1
-              key: PROJECT_NAME
-        - name: PROJECT_ENV
-          valueFrom:
-            configMapKeyRef:
-              name: config-1
-              key: PROJECT_ENV
-        - name: MYSQL_USERNAME
-          valueFrom:
-            configMapKeyRef:
-              name: config-1
-              key: MYSQL_USERNAME
-        - name: MYSQL_HOST
-          valueFrom:
-            configMapKeyRef:
-              name: config-1
-              key: MYSQL_HOST
+      env
