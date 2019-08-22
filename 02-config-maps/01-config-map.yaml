@@ -30,11 +30,11 @@ spec:
             configMapKeyRef:
               name: config-1
               key: PROJECT_NAME
-        - name: PROJECT_NAME
+        - name: MYSQL_USERNAME
           valueFrom:
             configMapKeyRef:
               name: config-1
-              key: PROJECT_NAME
+              key: MYSQL_USERNAME
         - name: PROJECT_NAME
           valueFrom:
             configMapKeyRef:
