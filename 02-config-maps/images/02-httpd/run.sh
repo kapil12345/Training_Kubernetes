@@ -1,3 +1,4 @@
 #!/bin/bash 
 
-echo -e "Welcome to ${COURSE_NAME} Training"
+echo -e "Welcome to ${COURSE_NAME} Training" >/var/www/html/index.html 
+
