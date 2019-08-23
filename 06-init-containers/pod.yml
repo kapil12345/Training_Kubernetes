@@ -31,5 +31,8 @@ spec:
   - name: init-myservice
     image: centos
     command: ["touch", "/opt/demo"]
+    volumeMounts:
+      - mountPath: "/opt/data"
+        name: demo1
 
 
