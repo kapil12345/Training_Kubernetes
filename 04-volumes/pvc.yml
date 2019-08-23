@@ -11,3 +11,19 @@ spec:
       storage: 30Gi
 
 --- 
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pvc-demo
+spec:
+  containers:
+    - name: demo
+      image: centos
+      
+      volumeMounts:
+      - mountPath: "/opt/data"
+        name: mariadb-pvc
+  volumes:
+    - name: mariadb-pvc
+      persistentVolumeClaim:
+        claimName: mariadb-pvc
