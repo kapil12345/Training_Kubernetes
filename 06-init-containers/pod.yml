@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sample
+  labels:
+    name: web
+spec:
+  containers:
+  - name: sample
+    image: rkalluru/sec-context:v3
+
