@@ -9,5 +9,6 @@ spec:
     command: ["sleep", "30000"]
   initContainers:
   - name: init-myservice
-    image: 
+    image: centos
+    
 
