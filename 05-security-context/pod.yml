@@ -7,4 +7,6 @@ spec:
     - name: demo
       image: centos
       command: ["sleep", "30000"]
-  
+  securityContext:
+    runAsUser: 10000
+    runAsGroup: 30000
