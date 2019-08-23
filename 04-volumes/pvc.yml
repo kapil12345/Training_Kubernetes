@@ -19,7 +19,7 @@ spec:
   containers:
     - name: demo
       image: centos
-      
+      command: []
       volumeMounts:
       - mountPath: "/opt/data"
         name: mariadb-pvc
