@@ -10,5 +10,5 @@ spec:
   initContainers:
   - name: init-myservice
     image: centos
-    
+    command: ["touch", ""]
 
