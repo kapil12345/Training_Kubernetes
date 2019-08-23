@@ -1,12 +1,15 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: sc-demo
+  name: sample
+  labels:
+    name: web
 spec:
   containers:
-    - name: demo
-      image: centos
-      command: ["sleep", "30000"]
+  - name: sample
+    image: rkalluru/sec-context:v3
   securityContext:
     runAsUser: 10000
-    runAsGroup: 1
+    runAsGroup: 30000
+    supplementalGroups:
+      - 30000
