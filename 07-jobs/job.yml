@@ -3,10 +3,10 @@ kind: Job
 metadata:
   name: pi
 spec:
+backoffLimit: 4
   template:
     spec:
       containers:
         - name: demo
           image: centos 
           command: ["sleep", "30"]
-          
