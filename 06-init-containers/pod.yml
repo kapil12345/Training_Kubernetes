@@ -22,11 +22,11 @@ spec:
     command: ["sleep", "30000"]
     volumeMounts:
       - mountPath: "/opt/data"
-        name: mariadb-pvc
+        name: demo1
   volumes:
-    - name: mariadb-pvc
+    - name: demo1
       persistentVolumeClaim:
-        claimName: mariadb-pvc
+        claimName: demo1
   initContainers:
   - name: init-myservice
     image: centos
