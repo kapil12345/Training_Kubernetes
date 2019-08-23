@@ -30,7 +30,7 @@ spec:
   initContainers:
   - name: init-myservice
     image: centos
-    command: ["touch", "/opt/demo"]
+    command: ["touch", "/opt/data/demo"]
     volumeMounts:
       - mountPath: "/opt/data"
         name: demo1
