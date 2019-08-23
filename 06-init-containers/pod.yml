@@ -10,5 +10,6 @@ spec:
   initContainers:
   - name: init-myservice
     image: centos
-    command: ["touch", "/opt/demo", "&&", "sleep", "10000"]
+    command: ["touch", "/opt/demo"]
+
 
