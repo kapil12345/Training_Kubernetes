@@ -7,4 +7,4 @@ spec:
   containers:
   - name: debug
     image: centos 
-    command: ["read", "-p"] 
+    command: ["read", "-p", "'a'"] 
