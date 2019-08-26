@@ -33,19 +33,5 @@ spec:
   ports:
     - protocol: TCP
       port: 80
-      nodePort: 
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: mysql
-  labels:
-    name: mysql
-spec:
-  type: NodePort
-  ports:
-    - port: 3036
-      nodePort: 30036
+      nodePort: 34000
       name: http
-  selector:
-    name: mysql
