@@ -5,6 +5,6 @@ metadata:
   name: httpd
 spec:
   containers:
-  - name: sample
-    image: centos 
-    command: ["sleep", "30000"]
+  - name: httpd
+    image: httpd 
+    
