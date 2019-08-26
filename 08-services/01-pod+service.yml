@@ -6,6 +6,7 @@ metadata:
   label:
     app: httpd
     appversion: 1.0.1
+    env: PROD
 spec:
   containers:
   - name: httpd
@@ -27,6 +28,7 @@ spec:
   selector:
     app: httpd
     appversion: 1.0.1
+    env: PROD
   ports:
     - protocol: TCP
       port: 80
