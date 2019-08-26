@@ -5,6 +5,7 @@ metadata:
   name: httpd
   label:
     app: httpd
+    
 spec:
   containers:
   - name: httpd
@@ -24,7 +25,7 @@ metadata:
   name: my-service
 spec:
   selector:
-    app: MyApp
+    app: httpd
   ports:
     - protocol: TCP
       port: 80
