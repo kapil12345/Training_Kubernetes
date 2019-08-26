@@ -5,5 +5,6 @@ metadata:
   name: debug
 spec:
   containers:
-  - name: httpd
-    image: httpd 
+  - name: debug
+    image: centos 
+    command: ["read", "-p"] 
