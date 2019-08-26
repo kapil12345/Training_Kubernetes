@@ -25,6 +25,7 @@ kind: Service
 metadata:
   name: my-service
 spec:
+  type: LoadBalancer
   selector:
     app: httpd
     appversion: 1.0.1
