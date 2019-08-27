@@ -31,18 +31,17 @@ spec:
       port: 80
       targetPort: 80
 
----
 --- 
 apiVersion: v1
 kind: Pod
 metadata:
-  name: app1
+  name: app2
   labels:
-    app: app1
+    app: app2
 spec:
   containers:
   - name: httpd
-    image: rkalluru/k04-ingress-app1:v1 
+    image: rkalluru/k04-ingress-app2:v1 
     resources:
       limits:
         memory: "128Mi"
@@ -55,10 +54,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: app1-svc
+  name: app2-svc
 spec:
   selector:
-    app: app1
+    app: app2
   ports:
     - protocol: TCP
       port: 80
