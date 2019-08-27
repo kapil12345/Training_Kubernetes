@@ -5,7 +5,7 @@ kind: Pod
 metadata:
   name: app1
   labels:
-    app: http
+    app: app1
 spec:
   containers:
   - name: httpd
