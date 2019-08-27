@@ -9,7 +9,7 @@ metadata:
 spec:
   containers:
   - name: httpd
-    image: rkalluru/ 
+    image: rkalluru/k04-ingress-app1:v1 
     resources:
       limits:
         memory: "128Mi"
@@ -25,9 +25,7 @@ metadata:
   name: my-service
 spec:
   selector:
-    app: httpd
-    appversion: 1.0.1
-    env: PROD
+    app: app1
   ports:
     - protocol: TCP
       port: 80
