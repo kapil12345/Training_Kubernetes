@@ -9,7 +9,7 @@ metadata:
 spec:
   containers:
   - name: httpd
-    image: httpd 
+    image: rkalluru/ 
     resources:
       limits:
         memory: "128Mi"
