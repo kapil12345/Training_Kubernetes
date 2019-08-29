@@ -93,6 +93,10 @@ metadata:
     kubernetes.io/ingress.class: nginx
     nginx.ingress.kubernetes.io/ssl-redirect: "false"
 spec:
+  tls:
+  - hosts:
+    - sslexample.foo.com
+    secretName: testsecret-tls
   rules:
   - host: app1.devopsproj.com
     http:
