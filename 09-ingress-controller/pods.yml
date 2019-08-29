@@ -79,3 +79,7 @@ spec:
         backend:
           serviceName: app1-svc
           servicePort: 80
+      - path: /app2
+        backend:
+          serviceName: app1-svc
+          servicePort: 80
