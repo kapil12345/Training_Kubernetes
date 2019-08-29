@@ -69,7 +69,7 @@ metadata:
   name: pod-ingress
   annotations:
     kubernetes.io/ingress.class: nginx
-    
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"
 spec:
   rules:
   - http:
