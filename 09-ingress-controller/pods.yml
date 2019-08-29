@@ -95,8 +95,8 @@ metadata:
 spec:
   tls:
   - hosts:
-    - sslexample.foo.com
-    secretName: testsecret-tls
+    - app1.devopsproj.com
+    secretName: app1-tls
   rules:
   - host: app1.devopsproj.com
     http:
