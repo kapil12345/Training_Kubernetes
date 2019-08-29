@@ -95,13 +95,9 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-  - http:
+  - host: app1.devopsproj.com
+    http:
       paths:
-      - host: /app1
-        backend:
+      - backend:
           serviceName: app1-svc
-          servicePort: 80
-      - host: /app2
-        backend:
-          serviceName: app2-svc
           servicePort: 80
