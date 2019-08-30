@@ -20,4 +20,4 @@ spec:
     spec:
       containers:
       - name: httpd
-        image: rkalluru/k04
+        image: httpd
