@@ -11,10 +11,12 @@ spec:
   selector:
     matchLabels:
       tier: frontend
+      app: httpd
   template:
     metadata:
       labels:
         tier: frontend
+        
     spec:
       containers:
       - name: php-redis
