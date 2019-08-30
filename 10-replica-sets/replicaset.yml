@@ -20,4 +20,4 @@ spec:
     spec:
       containers:
       - name: httpd
-        image: gcr.io/google_samples/gb-frontend:v3
+        image: rkalluru/k04
