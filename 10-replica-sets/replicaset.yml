@@ -35,12 +35,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: my-service
+  name: httpd-rs-svc
 spec:
   type: LoadBalancer
   selector:
     app: httpd
-    appversion: 1.0.1
     env: PROD
   ports:
     - protocol: TCP
