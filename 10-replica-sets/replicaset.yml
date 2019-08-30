@@ -19,5 +19,5 @@ spec:
         app: httpd
     spec:
       containers:
-      - name: php-redis
+      - name: httpd
         image: gcr.io/google_samples/gb-frontend:v3
