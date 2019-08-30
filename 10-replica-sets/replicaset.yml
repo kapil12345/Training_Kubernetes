@@ -40,7 +40,7 @@ spec:
   type: LoadBalancer
   selector:
     app: httpd
-    env: PROD
+    tier: frontend
   ports:
     - protocol: TCP
       port: 80
