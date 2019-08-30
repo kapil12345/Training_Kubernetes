@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: httpd
-        image: httpd
+        image: nginx
         resources:
           limits:
             memory: "128Mi"
