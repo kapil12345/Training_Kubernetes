@@ -8,3 +8,4 @@ spec:
   - name: debug
     image: centos 
     command: ["sleep", "10000"]
+    serviceAccountName: admin
