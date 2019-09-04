@@ -4,8 +4,9 @@ kind: Pod
 metadata:
   name: debug
 spec:
+  serviceAccountName: admin
   containers:
   - name: debug
     image: centos 
     command: ["sleep", "10000"]
-    serviceAccountName: admin
+    
