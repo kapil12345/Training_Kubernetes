@@ -5,7 +5,7 @@ metadata:
   name: httpd-data 
 data:
   course_name: Kubernetes
-  course_time: 8pm
+  course_time: 12pm
 ---
 apiVersion: v1
 kind: Pod
@@ -14,7 +14,7 @@ metadata:
 spec:
   containers:
     - name: httpd 
-      image: rkalluru/httpd-cm:v1
+      image: httpd
       resources:
         limits:
           memory: "64Mi"
